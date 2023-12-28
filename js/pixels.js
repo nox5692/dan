@@ -123,37 +123,3 @@ function dust() {
 }
 
 dust(); // start the loop
-
-// ==================================================================
-// ================ Works only for layers on the top ================
-// ==================================================================
-// //!
-// container.addEventListener('mouseover', function (event) {
-//     const current_hovered_element = event.target;
-//     // Remove the first element if the array exceeds the maximum limit
-//     if (previous_hovered_elements.length >= max_previous_elements) {
-//         const removed_element = previous_hovered_elements.shift();
-//         removed_element.classList.remove('hovered');
-//         removed_element.style.opacity = 1;
-//     }
-
-//     // Add the hover class to the current element
-//     current_hovered_element.classList.add('hovered');
-
-//     // Reset the trace
-//     setTimeout(() => {
-//         current_hovered_element.classList.remove('hovered');
-//         current_hovered_element.style.opacity = 1;
-//     }, 2000);
-
-//     // Add the current element to the array
-//     previous_hovered_elements.push(current_hovered_element);
-
-//     // Set opacity for all previous elements
-//     previous_hovered_elements.forEach((element, index) => {
-//         const opacity = ((index + 1) / max_previous_elements) + 0.1;
-//         element.style.opacity = opacity;
-//     });
-// });
-// //!
-
