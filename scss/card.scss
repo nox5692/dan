@@ -1,0 +1,84 @@
+@use "./colors.scss" as color;
+@use "./fonts.scss";
+@use "./config.scss" as root;
+
+.cards {
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    >*{
+        width: calc(33.33% - 1rem);
+    }
+    &::after {
+        content: "";
+        flex: auto;
+      }
+}
+
+.card {
+    @extend .card_dummy;
+
+    &_dummy {
+        display: flex;
+        flex-flow: column;
+        z-index: 2;
+        text-decoration: none;
+        height: max-content;
+        transition: 300ms ease-in-out;
+        color: color.$txt_light;
+        padding: calc(1.5rem - root.$card_border_thickness);
+        border-radius: 1rem;
+        background-color: #{color.$bg_main_active}90;
+        border: solid root.$card_border_thickness color.$bg_dark_outline;
+        backdrop-filter: blur(8px);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0 0 1rem 0;
+    }
+
+    &_title {
+        z-index: 3;
+        line-height: 1.5;
+        font-size: 20px;
+        max-width: 20ch;
+    }
+
+    &_text {
+        z-index: 3;
+        max-width: 40ch;
+        line-height: 1.5;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    &_arrow {
+        z-index: 3;
+        transition: 300ms ease-in-out;
+        display: flex;
+        justify-content: end;
+        font-weight: 600;
+        width: 100%;
+        font-size: 24px;
+        translate: -2% 0;
+    }
+
+    &_active {
+        @extend .card_dummy;
+        &:hover {
+            cursor: pointer;
+            background-color: #{color.$bg_main_active}DF;
+            translate: 0 -2%;
+
+            .card_arrow {
+                translate: 0% 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 2px solid #373C44;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+header .header {
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header .header_logo {
+  display: flex;
+  flex-flow: column;
+}
+header .header .header_logo span {
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1;
+}
+header .header nav {
+  display: flex;
+}/*# sourceMappingURL=header.css.map */

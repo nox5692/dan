@@ -1,0 +1,19 @@
+.info {
+  padding-block: 3rem;
+  min-height: 600px;
+  display: flex;
+  background: linear-gradient(180deg, #151921 0%, #010409 100%);
+}
+.info .info_heading {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.info .info_heading h1 {
+  font-size: 64px;
+}
+.info .info_heading p {
+  text-align: center;
+  font-size: 20px;
+}/*# sourceMappingURL=info.css.map */

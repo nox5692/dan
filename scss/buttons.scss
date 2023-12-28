@@ -1,0 +1,83 @@
+@use "colors.scss" as color;
+@use "./config.scss" as root;
+
+.button {
+    &_dummy {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+        padding: 4px;
+        transition: 300ms;
+        font-weight: 400;
+        box-sizing: border-box;
+        cursor: pointer
+    }
+
+    &_light {
+        @extend .button_dummy;
+        background-color: color.$bg_light;
+        color: color.$bg_main;
+
+        &_small {
+            @extend .button_light;
+            font-size: 14px;
+            padding: 8px 10px;
+            border-radius: 6px;
+        }
+
+        &_medium {
+            @extend .button_light;
+            font-size: 15px;
+            padding: 10px 16px;
+            border-radius: 8px;
+        }
+
+        &_large {
+            @extend .button_light;
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 8px;
+        }
+
+        &:hover {
+            background-color: color.$bg_light_active;
+        }
+    }
+
+    &_dark {
+        @extend .button_dummy;
+        background-color: #{color.$bg_main_active}90;
+        border: solid root.$card_border_thickness color.$bg_dark_outline;
+        backdrop-filter: blur(8px);
+        color: color.$txt_light;
+
+        &_small {
+            @extend .button_dark;
+            font-size: 14px;
+            padding: calc( 8px - root.$card_border_thickness ) calc(10px - root.$card_border_thickness );
+            border-radius: 6px;
+        }
+
+        &_medium {
+            @extend .button_dark;
+            font-size: 15px;
+            padding: calc( 10px - root.$card_border_thickness ) calc(16px - root.$card_border_thickness );
+            border-radius: 8px;
+        }
+
+        &_large {
+            @extend .button_dark;
+            font-size: 16px;
+            padding: 18px 28px;
+            padding: calc( 18px - root.$card_border_thickness ) calc( 28px - root.$card_border_thickness );
+            border-radius: 8px;
+        }
+
+        &:hover {
+            background-color: #{color.$bg_main_active}DF;
+        }
+    }
+
+}
