@@ -48,7 +48,7 @@
 
     &_dark {
         @extend .button_dummy;
-        background-color: #{color.$bg_main_active}90;
+        background-color: #{color.$bg_main_active}77;
         border: solid root.$card_border_thickness color.$bg_dark_outline;
         backdrop-filter: blur(8px);
         color: color.$txt_light;

@@ -33,7 +33,7 @@
   background-color: #E3E3E3;
 }
 .button_dark, .button_dark_large, .button_dark_medium, .button_dark_small {
-  background-color: #08183890;
+  background-color: #15192177;
   border: solid 1px #373C44;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
@@ -56,5 +56,5 @@
   border-radius: 8px;
 }
 .button_dark:hover, .button_dark_small:hover, .button_dark_medium:hover, .button_dark_large:hover {
-  background-color: #081838DF;
+  background-color: #151921DF;
 }/*# sourceMappingURL=buttons.css.map */

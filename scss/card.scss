@@ -35,7 +35,7 @@
         color: color.$txt_light;
         padding: calc(1.5rem - root.$card_border_thickness);
         border-radius: 1rem;
-        background-color: #{color.$bg_main_active}90;
+        background-color: #{color.$bg_main_active}77;
         border: solid root.$card_border_thickness color.$bg_dark_outline;
         backdrop-filter: blur(8px);
     }
