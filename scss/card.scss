@@ -54,6 +54,9 @@
         line-height: 1.5;
         font-size: 20px;
         max-width: 20ch;
+        background: linear-gradient(70deg, #ff6b6b, #4361ee) !important; /* Adjust the color stops as needed */
+        background-clip: text !important;
+        color: transparent !important;
     }
 
     &_text {

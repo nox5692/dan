@@ -14,16 +14,7 @@ body {
     position: relative;
 }
 
-h1 {
-    background: linear-gradient(70deg, #ff6b6b, #4361ee); /* Adjust the color stops as needed */
-    background-clip: text;
-    color: transparent;
-    margin: 0;
-
-}
-
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     color: color.$txt_light !important;
     margin: 0;
 }
