@@ -1,5 +1,6 @@
 @use "fonts.scss";
 @use "colors.scss" as color;
+@use './config.scss' as root;
 
 main {
     min-height: 100vh;
@@ -38,6 +39,9 @@ main {
                     margin: 0;
                     color: color.$txt_light;
                     font-size: 80px;
+                    @media screen and (max-width: root.$break-m) {
+                        font-size: 64px;
+                    }
                 }
 
                 .main_subtitle {

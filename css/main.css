@@ -75,6 +75,11 @@ main .main_content .main_container .main_text .main_title {
   color: #FAFAFA;
   font-size: 80px;
 }
+@media screen and (max-width: 768px) {
+  main .main_content .main_container .main_text .main_title {
+    font-size: 64px;
+  }
+}
 main .main_content .main_container .main_text .main_subtitle {
   filter: drop-shadow(0px 0px 4px #01040920);
   font-weight: 200;

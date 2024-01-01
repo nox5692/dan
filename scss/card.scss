@@ -76,6 +76,9 @@
         width: 100%;
         font-size: 24px;
         translate: -2% 0;
+        // background: linear-gradient(90deg, #ff6b6b, #4361ee) !important; /* Adjust the color stops as needed */
+        // color: transparent !important;
+        // background-clip: text !important;
     }
 
     &_active {

@@ -1,5 +1,6 @@
 @use "fonts.scss";
 @use "./colors.scss" as color;
+@use './config.scss' as root;
 
 * {
     font-family: 'Geist';
@@ -17,6 +18,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: color.$txt_light !important;
     margin: 0;
+}
+
+h1 {
+    font-size: 80px;
+    @media screen and (max-width: root.$break-m) {
+        font-size: 64px !important;
+    }
+}
+
+h2 {
+    font-size: 64px;
+    @media screen and (max-width: root.$break-m) {
+        font-size: 38px !important;
+    }
+}
+
+h3 {
+    font-size: 20px;
 }
 
 p {
