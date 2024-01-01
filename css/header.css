@@ -4,7 +4,7 @@ header {
   left: 0;
   z-index: 100;
   width: 100%;
-  border-bottom: 2px solid #373C44;
+  border-bottom: solid 1px #373C44;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }

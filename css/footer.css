@@ -1,0 +1,22 @@
+footer {
+  box-sizing: border-box;
+  min-height: 360px;
+  background: linear-gradient(0deg, #151921 0%, #010409 100%);
+  border-top: solid 1px #373C44;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+footer .footer .footer_logo {
+  display: flex;
+  flex-flow: column;
+}
+footer .footer .footer_logo span {
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1;
+}/*# sourceMappingURL=footer.css.map */

@@ -14,6 +14,12 @@
         content: "";
         flex: auto;
       }
+    @media screen and (max-width: root.$break-m) {
+        flex-flow: column;
+        * {
+            width: 100%
+        }
+    }
 }
 
 .card {
@@ -74,10 +80,10 @@
         &:hover {
             cursor: pointer;
             background-color: #{color.$bg_main_active}DF;
-            translate: 0 -2%;
+            translate: 0 -0.5rem;
 
             .card_arrow {
-                translate: 0% 0;
+                translate: 0 0;
             }
         }
     }

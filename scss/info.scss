@@ -1,4 +1,5 @@
 @use 'colors.scss' as color;
+@use './config.scss' as root;
 
 .info {
 
@@ -22,4 +23,7 @@
         }
     }
 
+    .info_category_details {
+        padding: 2rem 1rem;
+    }
 }

@@ -1,3 +1,4 @@
+@use './config.scss' as root;
 @use './colors.scss' as color;
 
 header {
@@ -6,7 +7,7 @@ header {
     left: 0;
     z-index: 100;
     width: 100%;
-    border-bottom: 2px solid color.$bg_dark_outline;
+    border-bottom: solid root.$card_border_thickness color.$bg_dark_outline;
     backdrop-filter: blur(8px);
     .header {
         padding: 0.75rem 2rem;

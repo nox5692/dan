@@ -16,4 +16,7 @@
 .info .info_heading p {
   text-align: center;
   font-size: 20px;
+}
+.info .info_category_details {
+  padding: 2rem 1rem;
 }/*# sourceMappingURL=info.css.map */

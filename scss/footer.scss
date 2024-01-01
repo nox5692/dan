@@ -1,0 +1,25 @@
+@use "./colors.scss" as color;
+@use './config.scss' as root;
+
+footer {
+    box-sizing: border-box;
+    min-height: 360px;
+    background: linear-gradient(0deg, color.$bg_main_active 0%, color.$bg_main 100%);
+    border-top: solid root.$card_border_thickness color.$bg_dark_outline;
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem;
+        .footer_logo {
+            display: flex;
+            flex-flow: column;
+            span {
+                color: white;
+                font-weight: 200;
+                text-transform: uppercase;
+                font-size: 24px;
+                line-height: 1;
+            }
+        }
+    }
+}
