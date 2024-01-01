@@ -1,4 +1,4 @@
-const PIXEL_SIZE = 48;
+const PIXEL_SIZE = 64;
 const container = document.querySelector(".pixel_bg_container");
 
 function get_random_hue_rotation() {

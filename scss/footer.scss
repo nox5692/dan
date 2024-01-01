@@ -3,13 +3,13 @@
 
 footer {
     box-sizing: border-box;
-    min-height: 360px;
+    min-height: 300px;
     background: linear-gradient(0deg, color.$bg_main_active 0%, color.$bg_main 100%);
     border-top: solid root.$card_border_thickness color.$bg_dark_outline;
     .footer {
         display: flex;
         justify-content: space-between;
-        padding: 4rem;
+        padding: 2rem;
         .footer_logo {
             display: flex;
             flex-flow: column;
@@ -19,6 +19,14 @@ footer {
                 text-transform: uppercase;
                 font-size: 24px;
                 line-height: 1;
+            }
+            .footer_logo_nav {
+                box-sizing: border-box;
+                display: flex;
+                flex-flow: column;
+                padding-block: 2rem 1rem;
+                gap: 1rem;
+                align-items: start;
             }
         }
     }

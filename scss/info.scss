@@ -6,7 +6,7 @@
     padding-block: 3rem;
     min-height: 600px;
     display: flex;
-    background: linear-gradient(180deg, color.$bg_main_active 0%, color.$bg_main 100%);
+    background: linear-gradient(180deg, color.$bg_main_active 0%, color.$bg_main 75%);
 
     .info_heading {
         display: flex;
@@ -25,5 +25,10 @@
 
     .info_category_details {
         padding: 2rem 1rem;
+        p {
+            line-height: 1.5;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
     }
 }
