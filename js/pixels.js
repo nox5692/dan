@@ -1,5 +1,16 @@
-const PIXEL_SIZE = 64;
+var vw = window.innerWidth || document.documentElement.clientWidth;
+
+var PIXEL_SIZE = 0;
+
+if ( vw > 776 ) {
+    PIXEL_SIZE = 64;
+} else {
+    PIXEL_SIZE = 42;
+}
+
 const container = document.querySelector(".pixel_bg_container");
+
+
 
 function get_random_hue_rotation() {
     // Generate a random hue rotation value between 0 and 360 degrees

@@ -2,7 +2,7 @@
   padding-block: 3rem;
   min-height: 600px;
   display: flex;
-  background: linear-gradient(180deg, #151921 0%, #010409 75%);
+  background: linear-gradient(180deg, #151921 0%, #010409 100%);
 }
 .info .info_heading {
   display: flex;
