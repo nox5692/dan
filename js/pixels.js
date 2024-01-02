@@ -112,7 +112,7 @@ function dust() {
         // Add the hover class to the current element
         artif_hover.classList.add('hovered');
         artif_hover.style.backgroundColor = 'white';
-        artif_hover.style.opacity = 0.5 + Math.random();
+        artif_hover.style.opacity = Math.random() % 0.6;
         // artif_hover.style.filter = get_random_hue_rotation();
 
         setTimeout(() => {
@@ -129,7 +129,7 @@ function dust() {
 
     setTimeout(() => {
         requestAnimationFrame(dust);
-    }, 200 + 200 * Math.random());
+    }, 200 + 400 * Math.random());
 
 }
 
