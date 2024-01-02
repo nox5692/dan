@@ -1,0 +1,45 @@
+main {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(0deg, #1A1F26 0%, #010409 100%);
+}
+
+.contact {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 3rem;
+}
+.contact .contact_items {
+  width: 100%;
+  padding-top: 2rem;
+}
+.contact .contact_items div h3 {
+  background: linear-gradient(70deg, #ff6b6b, #4361ee) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  color: transparent !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 1rem;
+}
+.contact .contact_items div a {
+  font-size: 20px;
+  margin-block: 1rem !important;
+  transition: 300ms;
+  color: #888888 !important;
+}
+.contact .contact_items div a:hover {
+  color: #FAFAFA !important;
+}/*# sourceMappingURL=contact.css.map */

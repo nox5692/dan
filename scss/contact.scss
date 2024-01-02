@@ -1,0 +1,54 @@
+@use './colors.scss' as color;
+@use './config.scss' as root;
+
+main {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(0deg, color.$bg_main_active 0%, color.$bg_main 100%);
+}
+
+.contact {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 3rem;
+
+    h1 {}
+
+    .contact_items {
+        width: 100%;
+        padding-top: 2rem;
+
+        div {
+            h3 {
+                background: linear-gradient(70deg, #ff6b6b, #4361ee) !important;
+                background-clip: text !important;
+                color: transparent !important;
+                width: fit-content;
+                padding-bottom: 1rem;
+            }
+
+            a {
+                font-size: 20px;
+                margin-block: 1rem !important;
+                transition: 300ms;
+                color: color.$txt_paragraph !important;
+
+                &:hover {
+                    color: color.$txt_light !important;
+                }
+            }
+        }
+    }
+}
