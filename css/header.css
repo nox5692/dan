@@ -14,6 +14,9 @@ header .header {
   align-items: center;
   justify-content: space-between;
 }
+header .header a {
+  text-decoration: none !important;
+}
 header .header .header_logo {
   display: flex;
   flex-flow: column;
