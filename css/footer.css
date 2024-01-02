@@ -1,13 +1,13 @@
 footer {
   box-sizing: border-box;
   min-height: 300px;
-  background: linear-gradient(0deg, #151921 0%, #010409 100%);
+  background: linear-gradient(0deg, #010409 0%, #1A1F26 100%);
   border-top: solid 1px #373C44;
 }
 footer .footer {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 3rem;
 }
 @media screen and (max-width: 768px) {
   footer .footer {

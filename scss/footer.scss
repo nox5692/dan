@@ -4,17 +4,14 @@
 footer {
     box-sizing: border-box;
     min-height: 300px;
-    background: linear-gradient(0deg, color.$bg_main_active 0%, color.$bg_main 100%);
+    background: linear-gradient(0deg,  color.$bg_main 0%, color.$bg_main_active 100%);
     border-top: solid root.$card_border_thickness color.$bg_dark_outline;
     .footer {
         display: flex;
         justify-content: space-between;
-        padding: 2rem;
+        padding: 3rem;
         @media screen and (max-width: root.$break-m) {
             flex-flow: column-reverse;
-            .footer_contact {
-                // padding-bottom: 2rem;
-            }
         }
         .footer_logo {
             display: flex;

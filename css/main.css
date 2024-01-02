@@ -44,7 +44,7 @@ main {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, #151921 0%, #010409 100%);
+  background: linear-gradient(0deg, #1A1F26 0%, #010409 100%);
 }
 main .main_content {
   z-index: 10;
@@ -82,12 +82,12 @@ main .main_content .main_container .main_text .main_title {
 }
 main .main_content .main_container .main_text .main_subtitle {
   filter: drop-shadow(0px 0px 4px #01040920);
-  font-weight: 200;
+  font-weight: 400 !important;
   letter-spacing: 2px;
   font-size: 20px;
   margin: 0;
   margin-bottom: 2rem;
-  color: #888888;
+  color: #888888 !important;
 }
 main .main_content .main_container .main_showcase {
   padding: 2rem 0.5rem;
@@ -99,7 +99,7 @@ main .main_content .main_container .main_showcase {
 main .main_scroll {
   translate: -50%;
   position: absolute;
-  bottom: 8%;
+  bottom: 12%;
   left: 50%;
   color: #888888;
   letter-spacing: 0.5rem;
@@ -142,4 +142,22 @@ main .main_scroll {
 .pixel_bg.hovered {
   background-color: #00FF00;
   filter: blur(1px);
+}
+
+.about {
+  background: linear-gradient(180deg, #010409 0%, #1A1F26 100%);
+  padding-block: 3rem 8rem;
+}
+.about .about_text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about .about_text p {
+  font-size: 20px;
+}
+.about .about_text .acout_cta {
+  margin-top: 2rem;
 }/*# sourceMappingURL=main.css.map */

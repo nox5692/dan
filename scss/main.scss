@@ -46,12 +46,12 @@ main {
 
                 .main_subtitle {
                     filter: drop-shadow(0px 0px 4px #{color.$bg_main}20);
-                    font-weight: 200;
+                    font-weight: 400 !important;
                     letter-spacing: 2px;
                     font-size: 20px;
                     margin: 0;
                     margin-bottom: 2rem;
-                    color: color.$txt_paragraph;
+                    color: color.$txt_paragraph !important;
                 }
             }
 
@@ -70,7 +70,7 @@ main {
     .main_scroll {
         translate: -50%;    
         position: absolute;
-        bottom: 8%;
+        bottom: 12%;
         left: 50%;
         color: color.$txt_paragraph;
         letter-spacing: 0.5rem;
@@ -116,4 +116,23 @@ main {
     background-color: #00FF00; // random hue colors
     // background-color: color.$bg_light; // just keeps it white
     filter: blur(1px);
+}
+
+.about {
+    // min-height: 600px;
+    background: linear-gradient(180deg, color.$bg_main 0%, color.$bg_main_active 100%);
+    padding-block: 3rem 8rem;
+    .about_text {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        p {
+            font-size: 20px;
+        }
+        .acout_cta {
+            margin-top: 2rem;
+        }
+    }
 }
