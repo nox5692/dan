@@ -9,9 +9,22 @@ footer .footer {
   justify-content: space-between;
   padding: 2rem;
 }
+@media screen and (max-width: 768px) {
+  footer .footer {
+    flex-flow: column-reverse;
+  }
+  footer .footer .footer_contact {
+    padding-bottom: 2rem;
+  }
+}
 footer .footer .footer_logo {
   display: flex;
   flex-flow: column;
+}
+@media screen and (max-width: 768px) {
+  footer .footer .footer_logo {
+    flex-flow: column-reverse;
+  }
 }
 footer .footer .footer_logo span {
   color: white;
@@ -19,6 +32,8 @@ footer .footer .footer_logo span {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 1;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 footer .footer .footer_logo .footer_logo_nav {
   box-sizing: border-box;

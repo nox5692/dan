@@ -10,15 +10,25 @@ footer {
         display: flex;
         justify-content: space-between;
         padding: 2rem;
+        @media screen and (max-width: root.$break-m) {
+            flex-flow: column-reverse;
+            .footer_contact {
+                padding-bottom: 2rem;
+            }
+        }
         .footer_logo {
             display: flex;
             flex-flow: column;
+            @media screen and (max-width: root.$break-m) {
+                flex-flow: column-reverse;
+            }
             span {
                 color: white;
                 font-weight: 200;
                 text-transform: uppercase;
                 font-size: 24px;
                 line-height: 1;
+                width: fit-content;
             }
             .footer_logo_nav {
                 box-sizing: border-box;
