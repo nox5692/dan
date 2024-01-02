@@ -29,5 +29,20 @@ footer {
                 align-items: start;
             }
         }
+        .footer_contact {
+            display: flex;
+            flex-flow: column;
+            * {
+                width: fit-content;
+            }
+            h3 {
+                background: linear-gradient(70deg, #ff6b6b, #4361ee) !important;
+                background-clip: text !important;
+                color: transparent !important;
+            }
+            p {
+                max-width: 35ch;
+            }
+        }
     }
 }

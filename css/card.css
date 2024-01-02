@@ -88,8 +88,10 @@
   z-index: 3;
   line-height: 1.5;
   font-size: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
   max-width: 20ch;
-  background: linear-gradient(70deg, #ff6b6b, #4361ee) !important; /* Adjust the color stops as needed */
+  background: linear-gradient(70deg, #ff6b6b, #4361ee) !important;
   -webkit-background-clip: text !important;
           background-clip: text !important;
   color: transparent !important;

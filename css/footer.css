@@ -27,4 +27,21 @@ footer .footer .footer_logo .footer_logo_nav {
   padding-block: 2rem 1rem;
   gap: 1rem;
   align-items: start;
+}
+footer .footer .footer_contact {
+  display: flex;
+  flex-flow: column;
+}
+footer .footer .footer_contact * {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .footer .footer_contact h3 {
+  background: linear-gradient(70deg, #ff6b6b, #4361ee) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  color: transparent !important;
+}
+footer .footer .footer_contact p {
+  max-width: 35ch;
 }/*# sourceMappingURL=footer.css.map */
