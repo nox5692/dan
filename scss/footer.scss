@@ -13,7 +13,7 @@ footer {
         @media screen and (max-width: root.$break-m) {
             flex-flow: column-reverse;
             .footer_contact {
-                padding-bottom: 2rem;
+                // padding-bottom: 2rem;
             }
         }
         .footer_logo {
@@ -37,6 +37,13 @@ footer {
                 padding-block: 2rem 1rem;
                 gap: 1rem;
                 align-items: start;
+                a {
+                    margin: 0 !important;
+                }
+                @media screen and (max-width: root.$break-m) {
+                    padding-block: 1rem 2rem;
+                    flex-flow: row;
+                }
             }
         }
         .footer_contact {

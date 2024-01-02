@@ -13,9 +13,6 @@ footer .footer {
   footer .footer {
     flex-flow: column-reverse;
   }
-  footer .footer .footer_contact {
-    padding-bottom: 2rem;
-  }
 }
 footer .footer .footer_logo {
   display: flex;
@@ -42,6 +39,15 @@ footer .footer .footer_logo .footer_logo_nav {
   padding-block: 2rem 1rem;
   gap: 1rem;
   align-items: start;
+}
+footer .footer .footer_logo .footer_logo_nav a {
+  margin: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  footer .footer .footer_logo .footer_logo_nav {
+    padding-block: 1rem 2rem;
+    flex-flow: row;
+  }
 }
 footer .footer .footer_contact {
   display: flex;
