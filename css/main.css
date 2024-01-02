@@ -84,7 +84,7 @@ main .main_content .main_container .main_text .main_subtitle {
   filter: drop-shadow(0px 0px 4px #01040920);
   font-weight: 400 !important;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 20px !important;
   margin: 0;
   margin-bottom: 2rem;
   color: #888888 !important;

@@ -71,7 +71,7 @@
   color: #FAFAFA;
   padding: calc(1.5rem - 1px);
   border-radius: 1rem;
-  background-color: #15192177;
+  background-color: #1A1F2677;
   border: solid 1px #373C44;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
@@ -115,7 +115,7 @@
 }
 .card_active:hover {
   cursor: pointer;
-  background-color: #151921DF;
+  background-color: #1A1F26DF;
   translate: 0 -0.5rem;
 }
 .card_active:hover .card_arrow {
