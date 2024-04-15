@@ -1,6 +1,6 @@
-## My personal promotion website
+## My personal website
 **My name is Dan and I love creating the web.**
-Take a look at this self promotion project.
+Take a look at this self promotional project.
 
 ### About the design
 Everyting is designed by hand, without libraries using scss features.
